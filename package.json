@@ -1,0 +1,58 @@
+{
+  "name": "@gooselanding/envguard-nextjs",
+  "version": "0.1.0",
+  "description": "Type-safe runtime environment variables for Next.js with validation",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    },
+    "./plugin": {
+      "types": "./dist/plugin.d.ts",
+      "require": "./dist/plugin.js",
+      "import": "./dist/plugin.mjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts src/plugin.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts src/plugin.ts --format cjs,esm --dts --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "nextjs",
+    "environment-variables",
+    "env",
+    "runtime",
+    "typescript",
+    "docker",
+    "validation"
+  ],
+  "author": "Goose Landing",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/willzhangfly/envguard-nextjs"
+  },
+  "homepage": "https://github.com/willzhangfly/envguard-nextjs#readme",
+  "bugs": {
+    "url": "https://github.com/willzhangfly/envguard-nextjs/issues"
+  },
+  "peerDependencies": {
+    "next": ">=13.0.0"
+  },
+  "dependencies": {
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  }
+}
