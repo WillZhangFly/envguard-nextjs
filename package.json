@@ -1,6 +1,6 @@
 {
   "name": "@gooselanding/envguard-nextjs",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Type-safe runtime environment variables for Next.js with validation",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -43,6 +43,10 @@
   "homepage": "https://github.com/willzhangfly/envguard-nextjs#readme",
   "bugs": {
     "url": "https://github.com/willzhangfly/envguard-nextjs/issues"
+  },
+  "funding": {
+    "type": "buymeacoffee",
+    "url": "https://buymeacoffee.com/willzhangfly"
   },
   "peerDependencies": {
     "next": ">=13.0.0"

@@ -80,6 +80,13 @@ docker run -e DATABASE_URL=postgres://prod app:latest
 
 ---
 
+## Support This Project
+
+If envguard-nextjs saved you time:
+- ⭐ Star the repo
+- 📢 Share with your team
+- ☕ [Buy me a coffee](https://buymeacoffee.com/willzhangfly)
+
 ## License
 
 MIT
