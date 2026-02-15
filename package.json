@@ -1,7 +1,8 @@
 {
   "name": "@gooselanding/envguard-nextjs",
-  "version": "0.1.2",
-  "description": "Type-safe runtime environment variables for Next.js with validation",
+  "version": "0.2.0",
+  "description": "Type-safe runtime environment variables for Next.js with Zod validation - no rebuilds needed for Docker",
+  "sideEffects": false,
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
@@ -27,12 +28,25 @@
   },
   "keywords": [
     "nextjs",
+    "next.js",
     "environment-variables",
     "env",
+    "dotenv",
+    ".env",
     "runtime",
+    "runtime-env",
     "typescript",
+    "type-safe",
     "docker",
-    "validation"
+    "validation",
+    "zod",
+    "schema",
+    "config",
+    "configuration",
+    "env-validation",
+    "environment",
+    "next-env",
+    "envguard"
   ],
   "author": "Goose Landing",
   "license": "MIT",
